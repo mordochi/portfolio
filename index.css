@@ -1,0 +1,84 @@
+* {
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  height: 35vh;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  text-align: center;
+}
+
+nav p {
+  grid-row-start: 2;
+  font-size: 25px;
+  color: #C4C4C4;
+  position: relative;
+}
+
+nav p::before {
+  content: '';
+  position: absolute;
+  right: 15%;
+  bottom: -10px;
+  height: 3px;
+  width: 0%;
+  background: #C4C4C4;
+  transition: width .1s linear;
+  z-index: 0;
+}
+
+nav p:hover::before {
+  width: 70%;
+  left: 15%;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  right: 15%;
+  bottom: -10px;
+  height: 3px;
+  width: 70%;
+  background: #C4C4C4;
+  transition: width .1s linear;
+  z-index: 0;
+}
+
+#tab-about-me {
+  grid-column-start: 2;
+}
+
+#tab-projects {
+  grid-column-start: 3;
+}
+
+.tab-content {
+  margin: 80px auto 0;
+}
+
+#about-me {
+  width: 30%;
+}
+
+#about-me p {
+  color: #C4C4C4;;
+}
+
+#about-me span {
+  margin: 10px;
+  color: #99CFB8;
+}
+
+#projects {
+  width: 60%;
+}
+

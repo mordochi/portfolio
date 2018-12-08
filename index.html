@@ -14,9 +14,17 @@
   <body>
     <div id="view">
       <nav>
-        <h1>關於我</h1>
-        <h1>作品集</h1>
+        <p id="tab-about-me" onclick="changeTab(event,'about-me')" class="active">關於我</p>
+        <p id="tab-projects" onclick="changeTab(event,'projects')">作品集</p>
       </nav>
+      <div id="about-me" class="tab-content">
+        <p>姓名<span>‣</span>机麗鈴</p>
+        <p>信箱<span>‣</span>lilynnchi@gmail.com</p>
+        <p>現任<span>‣</span>無想設計 前端工程師</p>
+      </div>
+      <div id="projects" class="tab-content">
+        作品
+      </div>
     </div>
   </body>
 </html>
