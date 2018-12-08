@@ -7,6 +7,7 @@
 
 body {
   margin: 0;
+  font-family: 'Noto Serif TC', serif;
 }
 
 nav {
@@ -22,6 +23,7 @@ nav p {
   font-size: 25px;
   color: #C4C4C4;
   position: relative;
+  cursor: pointer;
 }
 
 nav p::before {
@@ -70,7 +72,7 @@ nav p:hover::before {
 }
 
 #about-me p {
-  color: #C4C4C4;;
+  color: #B0B0B0;
 }
 
 #about-me span {
