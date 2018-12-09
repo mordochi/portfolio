@@ -1,8 +1,5 @@
 window.onload = function() {
-  const aboutMe = document.getElementById("about-me");
-  const projects = document.getElementById("projects");
 
-  projects.style.display = "none";
 };
 
 function changeTab(e, id) {
